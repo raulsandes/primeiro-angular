@@ -1,0 +1,63 @@
+
+h1 {
+    font-size: -webkit-xxx-large;
+}
+
+
+button {
+    width: 102px;
+    height: 38px;
+    border: none;
+    background-color: black;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-family: system-ui;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.form-control {
+    width: 3rem;
+    height: 3rem;
+    font-size: -webkit-xxx-large;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 0 10px #000;
+    background-color: rgb(20, 19, 19);
+    text-align: center;
+    color: aliceblue;
+}
+
+.green {
+    background-color: rgb(7, 131, 7);
+}
+
+.yellow {
+    background-color: rgb(243, 243, 43);
+}
+
+.changestyle {
+    background-color: rgb(165, 165, 5);
+}
+
+.scroll {
+    height: 200px;
+    width: 200px;
+    color: white;
+    text-align: center;
+  }
+
+  /* .example-viewport {
+    height: 200px;
+    width: 200px;
+    border: 3px solid black;
+  }
+  
+  .example-item {
+    height: 50px;
+    color: aliceblue;
+  } */
+
+  
+
+  

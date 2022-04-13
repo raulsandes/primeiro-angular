@@ -1,0 +1,51 @@
+<div class="container">
+
+        <h1>TERMO</h1>
+        <div>
+                <div>
+                        <input maxlength="1" [ngClass]="{'green': letters[0].here}"
+                                [ngClass]="{'yellow': letters[0].has}" (dblclick)="toggleState(0)" type="text"
+                                class="form-control" [(ngModel)]="letters[0].letter">
+                        <input maxlength="1" [ngClass]="{'green': letters[1].here}"
+                                [ngClass]="{'yellow': letters[1].has}" (dblclick)="toggleState(1)" type="text"
+                                class="form-control" [(ngModel)]="letters[1].letter">
+                        <input maxlength="1" [ngClass]="{'green': letters[2].here}"
+                                [ngClass]="{'yellow': letters[2].has}" (dblclick)="toggleState(2)" type="text"
+                                class="form-control" [(ngModel)]="letters[2].letter">
+                        <input maxlength="1" [ngClass]="{'green': letters[3].here}"
+                                [ngClass]="{'yellow': letters[3].has}" (dblclick)="toggleState(3)" type="text"
+                                class="form-control" [(ngModel)]="letters[3].letter">
+                        <input maxlength="1" [ngClass]="{'green': letters[4].here}"
+                                [ngClass]="{'yellow': letters[4].has}" (dblclick)="toggleState(4)" type="text"
+                                class="form-control" [(ngModel)]="letters[4].letter">
+                        <br><br>
+                        <button class="button" (click)="newGuess()">Submit</button>
+
+                </div>
+                <div class="">
+                        <h3>Sugestões: {{words.length}}</h3>
+                        <cdk-virtual-scroll-viewport itemSize="words.length" class="example-viewport">
+                                <div *cdkVirtualFor="let word of words" class="example-item">{{word}}</div>
+                        </cdk-virtual-scroll-viewport>
+
+                </div>
+                <div>
+                        <h3>Sugestões Must not: {{printMnot.length}}</h3>
+                        <cdk-virtual-scroll-viewport itemSize="printMnot.length" class="example-viewport">
+                                <div *cdkVirtualFor="let x of printMnot" class="example-item">{{x}}</div>
+                        </cdk-virtual-scroll-viewport>
+                        <h3>Sugestões Must: {{printMust.length}}</h3>
+                        <cdk-virtual-scroll-viewport itemSize="printMust.length" class="example-viewport">
+                                <div *cdkVirtualFor="let x of printMust" class="example-item">{{x}}</div>
+                        </cdk-virtual-scroll-viewport>
+                        <h3>Sugestões Here: {{printHere.length}}</h3>
+                        <cdk-virtual-scroll-viewport itemSize="printHere.length" class="example-viewport">
+                                <div *cdkVirtualFor="let x of printHere" class="example-item">{{x}}</div>
+                        </cdk-virtual-scroll-viewport>
+                        <h3>Sugestões Dont: {{printDont.length}}</h3>
+                        <cdk-virtual-scroll-viewport itemSize="printDont.length" class="example-viewport">
+                                <div *cdkVirtualFor="let x of printDont" class="example-item">{{x}}</div>
+                        </cdk-virtual-scroll-viewport>
+                </div>
+        </div>
+</div>
