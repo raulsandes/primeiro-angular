@@ -8,7 +8,7 @@ To help solving https://term.ooo/
 
 It's similar to wordle, but in portuguese.
 
-![image](https://user-images.githubusercontent.com/69020448/163208231-5f92f64c-8b57-4871-9ad9-9aa521a4f1f4.png)
+![Screenshot from 2022-04-13 11-51-17](https://user-images.githubusercontent.com/69020448/163209014-4bdeeda8-d9c8-4284-9b77-27f5a40dc995.png)
 
 
 
